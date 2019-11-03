@@ -1,12 +1,22 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/cats">Cats</router-link> |
-      <router-link to="/dogs">Dogs</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <!-- Navbar-->
+          <b-navbar toggleable="sm" type="dark" variant="dark">
+          <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
+          <b-navbar-brand>Test Site</b-navbar-brand>
+
+          <b-collapse id="nav-text-collapse" is-nav>
+            <b-navbar-nav>
+              <b-nav-item><router-link class="nav-link" to="/home">Home</router-link></b-nav-item>
+              <b-nav-item><router-link class="nav-link" to="/cats">Cats</router-link></b-nav-item>
+              <b-nav-item><router-link class="nav-link" to="/dogs">Dogs</router-link></b-nav-item>
+            </b-navbar-nav>
+          </b-collapse>
+        </b-navbar>
+        <router-view>
+
+        </router-view>
+    <!-- end Navbar-->
   </div>
 </template>
 
