@@ -3,13 +3,14 @@
     <!-- Navbar-->
           <b-navbar toggleable="sm" type="dark" variant="dark">
           <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
-          <b-navbar-brand>Test Site</b-navbar-brand>
+          <b-navbar-brand>Pets Inc</b-navbar-brand>
 
           <b-collapse id="nav-text-collapse" is-nav>
             <b-navbar-nav>
               <b-nav-item><router-link class="nav-link" to="/home">Home</router-link></b-nav-item>
               <b-nav-item><router-link class="nav-link" to="/cats">Cats</router-link></b-nav-item>
               <b-nav-item><router-link class="nav-link" to="/dogs">Dogs</router-link></b-nav-item>
+              <b-nav-item><router-link class="nav-link" to="/pets">Pets</router-link></b-nav-item>
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
